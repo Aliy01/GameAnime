@@ -5,16 +5,17 @@ window.addEventListener('DOMContentLoaded', function() {
         menu = document.querySelector("#menu"),
         startGame = document.querySelector(".btn-outline-primary"),
         settingsGame = document.querySelector(".btn-outline-warning"),
-        exitGame = document.querySelector(".btn-outline-danger"),
+        exitGame = document.querySelector(".fa-arrow-right-from-bracket"),
         settings = document.querySelector(".container"),
         start = document.querySelector("#start"),
         cancel = document.querySelector(".fa-xmark"),
         car = document.querySelector(".car"),
         left = document.querySelector(".fa-angle-left"),
         right = document.querySelector(".fa-angle-right"),
-        setting = document.querySelector(".fa-gear"),
+        setting = document.querySelector(".fa-pause"),
         controllers = document.querySelector("#controllers"),
-        controllSet = document.querySelector(".content");
+        controllSet = document.querySelector(".service-controll"),
+        pauseServe = document.querySelector(".pause-service");
 
 
     cancel.addEventListener("click", () => {
@@ -22,12 +23,13 @@ window.addEventListener('DOMContentLoaded', function() {
 
     })
     setting.addEventListener("click", () => {
-        controllSet.style.display = "flex"
+        pauseServe.style.display = "flex"
+        pauseServe.style.position = "relative"
 
     })
     settingsGame.addEventListener("click", () => {
         settings.style.display = "flex"
-        settings.style.position = "relative"
+        settings.style.position = "absolute"
 
     })
     btnBegin.addEventListener('click', () => {
@@ -38,14 +40,21 @@ window.addEventListener('DOMContentLoaded', function() {
     startGame.addEventListener("click", () => {
         start.style.display = "flex"
         start.style.position = "absolute"
-        menu.style.display = "none"
+        controllSet.style.display = "flex"
         controllers.style.display = "flex"
+        menu.style.display = "none"
+
     });
 
     exitGame.addEventListener("click", () => {
         beginGame.style.display = "flex"
         menu.style.display = "none"
-
+        start.style.display = "none"
+        pauseServe.style.display = "none"
+        controllers.style.display = "none"
+        controllSet.style.display = "none"
+        btnBegin.style.position = "relative"
+        btnBegin.style.top = 350 + "px"
     })
 
 
