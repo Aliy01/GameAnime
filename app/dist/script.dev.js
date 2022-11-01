@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', function () {
       car = document.querySelector(".car"),
       left = document.querySelector(".fa-angle-left"),
       right = document.querySelector(".fa-angle-right"),
-      setting = document.querySelectorAll(".fa-gear"),
+      setting = document.querySelector(".fa-gear"),
       controllers = document.querySelector("#controllers"),
       controllSet = document.querySelector(".content");
   cancel.addEventListener("click", function () {
@@ -29,7 +29,6 @@ window.addEventListener('DOMContentLoaded', function () {
   });
   btnBegin.addEventListener('click', function () {
     menu.style.display = "flex";
-    menu.style.position = "absolute";
     beginGame.style.display = "none";
     beginGame.style.transition = ".5s";
   });
