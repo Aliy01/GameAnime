@@ -17,7 +17,7 @@
 <body>
     <section id="game">
         <section id="begin">
-            <p>Welcome To Game</p>
+            <p class="welcome">Welcome To Game</p>
             <div class="home">
                 <button class="btn btn-primary"> Start </button>
             </div>
@@ -83,43 +83,45 @@
                 <i class="fa-solid fa-angle-left"></i>
                 <i class="fa-solid fa-angle-right"></i>
             </div>
-
-
-
-        </section id="navbars">
-
-
-        <div class="navbar">
-            <div class="service-controll">
-                <i class="fa-solid fa-pause"></i>
-                <i class="fa-solid fa-heart"></i>
+        </section>
+        <section id="navbars">
+            <div class="navbar">
+                <div class="service-controll">
+                    <i class="fa-solid fa-pause"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="pause-service">
+                    <button class="btn btn-secondary"> <i class = "fas fa-play"></i> contunie</button>
+                    <button class="btn btn-secondary"> <i class="fa-solid fa-rotate-right"></i> repeat</button>
+                    <button class="btn btn-secondary"> <i class="fa-solid fa-gear"></i> settings</button>
+                    <button class="btn btn-secondary"> <i class="fa-solid fa-arrow-right-from-bracket"></i> exit</button>
+                </div>
             </div>
-            <div class="pause-service">
-                <button class="btn btn-secondary"> <i class = "fas fa-play"></i> contunie</button>
-                <button class="btn btn-secondary"> <i class="fa-solid fa-rotate-right"></i> repeat</button>
-                <button class="btn btn-secondary"> <i class="fa-solid fa-gear"></i> settings</button>
-                <button class="btn btn-secondary"> <i class="fa-solid fa-arrow-right-from-bracket"></i> exit</button>
+
+            <div class="setting">
+                <div class="settings-field">
+                    <p><a href="#">about</a></p>
+                    <p><a href="#">about</a></p>
+                    <p><a href="#">about</a></p>
+                    <p><a href="#">about</a></p>
+                </div>
+                <div class="cancel">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
             </div>
-        </div>
+            <div class="repiate-settings">
 
-        <div class="setting">
-            <div class="settings-field">
-                <p><a href="#">about</a></p>
-                <p><a href="#">about</a></p>
-                <p><a href="#">about</a></p>
-                <p><a href="#">about</a></p>
             </div>
-            <div class="cancel">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-        </div>
-        <div class="repiate-settings">
 
-        </div>
+        </section>
 
-    </section>
 
-    <script src="./app/script.js"></script>
+
+        <script src="./app/script.js"></script>
+        <script src="./app/menu.js"></script>
+        <script src="./app/start.js"></script>
+        <script src="./app/controllers.js"></script>
+        <script src="./app/navbars.js"></script>
 </body>
 
 </html>
