@@ -2,24 +2,29 @@
 
 var beginGame = document.querySelector("#begin"),
     menu = document.querySelector("#menu"),
+    menuIcon = document.querySelectorAll(".menu-icons"),
     startGame = document.querySelector(".btn-outline-primary"),
     settingsGame = document.querySelector(".btn-outline-warning"),
-    exitGame = document.querySelector(".fa-arrow-right-from-bracket"),
+    exitGame = document.querySelectorAll(".fa-arrow-right-from-bracket"),
     settings = document.querySelector(".container"),
     cancel = document.querySelector(".fa-xmark");
 cancel.addEventListener("click", function () {
   settings.style.display = "none";
+  gameSet.style.display = "none";
 });
 settingsGame.addEventListener("click", function () {
   settings.style.display = "flex";
   settings.style.position = "absolute";
+  menuIcon.style.position = "relative";
 });
 startGame.addEventListener("click", function () {
   start.style.display = "flex";
   start.style.position = "absolute";
-  controllSer.style.display = "flex";
   controllers.style.display = "flex";
   menu.style.display = "none";
+  car.style.position = "relative";
+  controllSer.style.display = "flex";
+  controllSer.style.position = "relative";
 });
 exitGame.addEventListener("click", function () {
   beginGame.style.display = "flex";

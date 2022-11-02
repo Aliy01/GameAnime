@@ -42,11 +42,17 @@ section #menu {
 }
 
 #menu .menu-icons {
-    margin: 15% 45%;
+    width: 20%;
+    margin: 15% 40%;
     position: absolute;
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
+}
+
+#menu .menu-icon {
+    display: flex;
+    position: relative;
+    opacity: .7;
 }
 
 #menu .icon i {
@@ -72,43 +78,56 @@ section #menu {
     margin-top: 27.5px;
 }
 
-.container {
-    width: 100%;
+#menu .container {
+    width: 20%;
     height: 300px;
-    display: none;
-    background: #ddd;
-    border-radius: 5px;
     position: absolute;
+    display: none;
+    background: rgba(255, 255, 255, .5);
+    margin: 15% 40%;
+    border-radius: 5px;
 }
 
 .settings-field {
-    width: 200px;
-    height: 300px;
     position: relative;
     flex-direction: column;
     padding: 50px 52.5px;
     justify-content: center;
 }
 
-.settings-field a {
-    text-align: center;
+.settings-field p {
+    margin-left: -20px;
     text-decoration: none;
     font-size: 24px;
+    background: rgba(255, 255, 255, .1);
+    padding: 5px 65px;
+    border-radius: 25px;
+}
+
+.settings-field p:hover {
+    background: rgba(255, 255, 255, .5);
+    transition: .5s ease;
 }
 
 .cancel .fa-xmark {
+    position: relative;
     font-size: 24px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: -50px;
+    background: #ddd;
+    padding: 2px 6px;
+    border-radius: 50%;
 }
 
 .fa-xmark:hover {
-    transform: rotateY(360deg);
-    transition: 1s;
+    transform: rotateZ(360deg);
+    transition: 1.5s;
+    background: #000;
+    color: #ddd;
 }
 
 section #start {
-    width: 100%;
+    width: 1365px;
     height: 695px;
     background: #999;
     display: none;
@@ -172,35 +191,46 @@ section #start {
 
 #navbars {
     font-size: 32px;
-    width: 100%;
-    height: 25px;
     position: relative;
+    height: 300px;
+    width: 100%;
 }
 
 #navbars .navbar {
     position: absolute;
-    display: flex;
-    margin: 5px;
+    margin: 2px 42.5%;
     display: flex;
 }
 
-.navbar .service-controll,
 .navbar .pause-service {
-    display: none;
     position: absolute;
 }
 
-.navbar .service-controll {
+.service-controll {
+    position: absolute;
+    display: none;
     width: 100%;
     justify-content: center;
     text-align: center;
     font-size: 32px;
-    padding-top: 25px;
-    padding-left: 25px;
+    margin-left: 55px;
 }
 
 .navbar .service-controll i {
-    margin: 15px;
+    margin: 5px;
+    opacity: .5;
+}
+
+.service-controll i:first-child:hover {
+    opacity: 1;
+    color: rgb(158, 158, 13);
+    transition: .5s
+}
+
+.service-controll i:last-child:hover {
+    opacity: 1;
+    color: #dc143c;
+    transition: .5s
 }
 
 .navbar .pause-service {
@@ -212,4 +242,23 @@ section #start {
     margin: 0px 40%;
     border-radius: 5px;
     padding: 15px;
+    display: none;
+}
+
+#navbar .setting {
+    width: 20%;
+    height: 300px;
+    position: absolute;
+    display: none;
+    background: rgba(255, 255, 255, .5);
+    margin: 15% 40%;
+    border-radius: 5px;
+}
+
+.setting .settings-field {
+    position: relative;
+    flex-direction: column;
+    padding: 50px 52.5px;
+    justify-content: center;
+    display: none;
 }

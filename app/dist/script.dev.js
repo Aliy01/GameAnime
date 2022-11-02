@@ -1,8 +1,7 @@
 "use strict";
 
 window.addEventListener('DOMContentLoaded', function () {
-  var menuIcon = document.querySelectorAll(".menu-icon"),
-      btnBegin = document.querySelector(".btn-primary");
+  var btnBegin = document.querySelector(".btn-primary");
   btnBegin.addEventListener('click', function () {
     menu.style.display = "flex";
     beginGame.style.display = "none";
