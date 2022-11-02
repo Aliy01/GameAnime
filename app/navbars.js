@@ -4,5 +4,11 @@ const controllSer = document.querySelector(".service-controll"),
     gameSet = document.querySelector(".setting");
 
 setting.addEventListener("click", () => {
-    gameSet.style.display = "fixed"
+
+    gameSet.style.display = "flex"
+    pauseServe.style.display = "flex"
+    pauseServe.style.flexDirection = "column"
+    pauseServe.style.position = "absolute"
+    pauseServe.style.marginTop = 250 + "px"
+
 })

@@ -207,13 +207,13 @@ section #start {
 }
 
 .service-controll {
-    position: absolute;
+    position: relative;
     display: none;
     width: 100%;
     justify-content: center;
     text-align: center;
     font-size: 32px;
-    margin-left: 55px;
+    margin-left: 45px;
 }
 
 .navbar .service-controll i {
@@ -234,15 +234,24 @@ section #start {
 }
 
 .navbar .pause-service {
-    width: 100%;
-    height: 30%;
-    background: rgb(255, 255, 255, .5);
+    width: 200px;
+    height: 300px;
+    background: rgba(255, 255, 255, .5);
     position: absolute;
-    flex-direction: column;
-    margin: 0px 40%;
+    margin-left: -20%;
     border-radius: 5px;
-    padding: 15px;
+    padding: 0px;
     display: none;
+    border-radius: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar .pause-service .btn {
+    width: 80%;
+    height: 20%;
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
 #navbar .setting {
